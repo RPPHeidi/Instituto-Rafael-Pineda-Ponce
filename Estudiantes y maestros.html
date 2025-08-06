@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudiantes y Docentes</title>
+  <style>
+    :root {
+      --azul-marino: #002244;
+      --celeste: #87CEFA;
+      --gris-claro: #f0f0f0;
+      --blanco: #ffffff;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--celeste);
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .imagen-cuadro {
+      background-color: var(--blanco);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 5px 10px 16px #5c8cc9;
+      width: fit-content;
+      margin: 0 auto 40px auto;
+    }
+
+    .imagen-cuadro img {
+      width: 200px;
+      height: auto;
+      border-radius: 15px;
+      animation: flotando 3s ease-in-out infinite;
+    }
+
+    @keyframes flotando {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+    }
+
+    .menu li {
+      position: relative;
+      background-color: var(--azul-marino);
+      padding: 15px 30px;
+      border-radius: 15px;
+      color: white;
+      font-weight: bold;
+      box-shadow: 5px 10px 12px #5c8cc9;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .menu li:hover {
+      transform: scale(1.1);
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: var(--blanco);
+      border: 2px solid var(--celeste);
+      border-radius: 10px;
+      padding: 10px;
+      z-index: 100;
+      box-shadow: 5px 10px 12px #5c8cc9;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    .submenu table {
+      border-collapse: collapse;
+    }
+
+    .submenu td {
+      padding: 5px;
+      text-align: center;
+    }
+
+    .submenu a button {
+      background-color: var(--azul-marino);
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+      box-shadow: 2px 4px 8px #5c8cc9;
+    }
+
+    .submenu a button:hover {
+      background-color: #1e90ff;
+      transform: scale(1.1);
+    }
+
+    .btn-volver {
+      margin-top: 40px;
+      background-color: var(--blanco);
+      color: var(--azul-marino);
+      border: 1px solid var(--celeste);
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 5px 10px 16px #5c8cc9;
+      transition: transform 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-volver:hover {
+      background-color: var(--gris-claro);
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 600px) {
+      .menu {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="imagen-cuadro">
+    <img src="Logodelcole.jpg" alt="Imagen decorativa">
+  </div>
+
+
+  <ul class="menu">
+    <li>
+      DOCENTES
+      <div class="submenu">
+        <table>
+          <tr><td><a href="Docentes IRPP 2025 .pdf" target="_blank"><button>Docentes 2025</button></a></td></tr>
+          
+        </table>
+      </div>
+    </li>
+    <li>
+      ALUMNOS
+      <div class="submenu">
+        <table>
+          <tr><td><a href="Docentes IRPP 2025 .pdf" target="_blank"><button>Alumnos 2025</button></a></td></tr>
+          
+        </table>
+      </div>
+    </li>
+  </ul>
+
+  <br><br>
+  <a href="index.html" class="btn-volver">← Volver a la Página Principal</a>
+
+</body>
+</html>
+

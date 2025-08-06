@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferta Académica</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(180deg, #007BFF, #cce6ff);
+    }
+
+    .contenedor {
+      width: 85%;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 32px;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 6px #004f91;
+    }
+
+    .seccion {
+      margin-bottom: 40px;
+    }
+
+    .seccion h2 {
+      color: white;
+      background: linear-gradient(to right, #0066cc, #33ccff);
+      border-radius: 15px;
+      padding: 10px;
+      margin-bottom: 15px;
+      text-align: center;
+      box-shadow: 2px 4px 10px #2980b9;
+      font-size: 20px;
+    }
+
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .tarjeta {
+      background-color: white;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .tarjeta:hover {
+      transform: scale(1.03);
+    }
+
+    .tarjeta h3 {
+      margin-top: 0;
+      color: #0055aa;
+      font-size: 18px;
+    }
+
+    .tarjeta p {
+      color: #333;
+      font-size: 14px;
+    }
+
+    .btn-volver {
+      display: block;
+      width: fit-content;
+      margin: 30px auto 0;
+      background-color: #123c84;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+     .btn-volver:hover {
+      background-color: #0a2b65;
+      transform: scale(1.05);
+    }
+
+    .boton-llamativo:hover {
+      background-color: white;
+      transform: scale(1.1);
+    }
+
+    .centrado {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Oferta Académica</h1>
+
+    <div class="seccion">
+      <h2>Ciclo Técnico Básico (7mo, 8vo y 9no grado)</h2>
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <h3>Corte y Confección</h3>
+          <p>Habilidades básicas en costura, diseño y elaboración de prendas.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Soldadura</h3>
+          <p>Introducción al manejo de equipos y técnicas de soldadura básicas.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Madera</h3>
+          <p>Carpintería, uso de herramientas y elaboración de proyectos simples.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="seccion">
+      <h2>Carreras Técnicas</h2>
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <h3>Administración de Hotelería</h3>
+          <p>Servicios turísticos, atención al cliente y gestión hotelera.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Informática</h3>
+          <p>Programación, redes, mantenimiento de computadoras y software.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Construcciones Metálicas</h3>
+          <p>Diseño, armado y montaje de estructuras metálicas.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Soldadura Avanzada</h3>
+          <p>Técnicas industriales de soldadura y estructuras metálicas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="centrado">
+      <a href="index.html" class="btn-volver">← Volver a la Página Principal</a>
+    </div>
+  </div>
+</body>
+</html>
